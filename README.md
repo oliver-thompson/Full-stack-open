@@ -1,1 +1,1 @@
-# Full-stack-open exercises
+Full-stack-open exercises
