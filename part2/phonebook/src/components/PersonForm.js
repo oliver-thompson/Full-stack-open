@@ -66,6 +66,12 @@ const PersonForm = ({ persons, newName, newNumber, message, setPersons, setNewNa
             setMessage(`Added ${returnedPerson.name}`)
             setMessageType('add')
           })
+          .catch(error => {
+            console.log('error response data', error.response.data)
+            setMessage(error.response.data.error)
+            setMessageType('error')
+          })
+            
       }
     }
   
