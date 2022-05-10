@@ -2,10 +2,8 @@ POST http://localhost:3003/api/blogs
 Content-Type: application/json
 
 {
-    "title": "hltv",
-    "author": "professeur",
-    "url": "hltv.org",
-    "likes": 50
+    "author": "abcder",
+    "url": "google.com"
 }
 
 ###
@@ -13,4 +11,29 @@ GET http://localhost:3003/api/blogs
 
 ###
 
-DELETE http://localhost:3003/api/blogs/62460c68b451221aa727f187
+DELETE http://localhost:3003/api/blogs/625605d2b88c25bd25ca9e15
+
+###
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "whitemask",
+    "name": "varre",
+    "password": "nomaidens"
+}
+
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "url": "yahoo.com",
+    "title": "abcdefg",
+    "author": "qwerty",
+    "likes": 5000,
+    "userId": "625482b66e130878ab032fb1"
+}
